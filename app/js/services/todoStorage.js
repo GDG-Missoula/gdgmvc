@@ -7,17 +7,17 @@
 todomvc.factory('todoStorage', function () {
 	var STORAGE_ID = 'todos-angularjs';
 	var todosMem = [];
-	if (chrome) return {
+	return {
 		get: function () {
 			return todosMem;
 		},
 
 		put: function (todos) {
-			todosMem = todos;
+			//todosMem = todos;
 		}
 	};
 
-
+/*
 	return {
 		get: function () {
 			return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
@@ -27,4 +27,5 @@ todomvc.factory('todoStorage', function () {
 			localStorage.setItem(STORAGE_ID, JSON.stringify(todos));
 		}
 	};
+*/
 });

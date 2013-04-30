@@ -32,7 +32,6 @@ todomvc.controller('TodoCtrl', function TodoCtrl($scope, $location, todoStorage,
 	});
 
 	$scope.addTodo = function () {
-		debugger;
 		if (!$scope.newTodo.length) {
 			return;
 		}
